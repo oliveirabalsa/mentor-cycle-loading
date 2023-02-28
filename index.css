@@ -1,6 +1,6 @@
 .container {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: grid;
   place-items: center;
   margin: auto;
@@ -17,6 +17,10 @@
   transform-origin: center;
 }
 
+.letters > path {
+  animation: show 2s linear forwards;
+}
+
 .circle {
   animation: zoom 2s infinite linear;
   transform-origin: center;
@@ -26,10 +30,11 @@
   position: relative;
   width: 80px;
   height: 80px;
+  left: -5px;
 }
 .lds-ellipsis div {
   position: absolute;
-  top: -60px;
+  top: -45px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -94,6 +99,27 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    fill: rgb(156, 153, 153);
+  }
+  20% {
+    fill: rgb(61, 61, 61);
+  }
+  40% {
+    fill: rgb(43, 42, 42);
+  }
+  60% {
+    fill: rgb(15, 15, 15);
+  }
+  80% {
+    fill: rgb(43, 42, 42);
+  }
+  100% {
+    fill: rgb(156, 153, 153);
   }
 }
 
