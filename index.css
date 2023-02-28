@@ -18,7 +18,7 @@
 }
 
 .letters > path {
-  animation: show 2s linear forwards;
+  animation: show 2s linear infinity;
 }
 
 .circle {
